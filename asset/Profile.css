@@ -1,0 +1,118 @@
+.Profile {
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.Section1 {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(75, 77, 82, 0.781);
+    float: left;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    transition: left ease-in-out 300ms;
+}
+
+.Hide {
+    left: -26%;
+    transition: left ease-in-out 300ms;
+}
+
+
+
+
+.Section1 .container {
+    width: 70%;
+}
+
+.Section2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 77, 82, 0.555);
+}
+
+.hum {
+    padding: 10px;
+    position: absolute;
+    float: right;
+    left: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    transform: translateX(-100%);
+    cursor: pointer;
+}
+
+.hum span {
+    width: 100%;
+    height: 2px;
+    margin: 3px auto;
+    background-color: aliceblue;
+    border-radius: 3px;
+    transition: width ease-in-out 300ms;
+}
+
+.hum span:nth-child(1) {
+    width: 50%;
+}
+
+.hum span:nth-child(3) {
+    width: 50%;
+}
+
+.hum:hover>span:nth-child(1) {
+    width: 100%;
+    transition: width ease-in-out 300ms;
+}
+
+.hum:hover>span:nth-child(3) {
+    width: 100%;
+    transition: width ease-in-out 300ms;
+}
+
+.hum:hover>span:nth-child(2) {
+    width: 50%;
+    transition: width ease-in-out 300ms;
+}
+
+.Section1 .menu {
+    width: 100%;
+    position: relative;
+    /* background-color: aqua; */
+    height: 10vh;
+}
+
+.Section1 .info {
+    width: 100%;
+}
+
+.Section1 .info span {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Section1 .info span i {
+    position: absolute;
+    float: right;
+    left: 100%;
+    padding: 12px;
+    transform: translateX(-100%);
+    margin: 0 10px 0 0;
+    font-size: 29px;
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+}
