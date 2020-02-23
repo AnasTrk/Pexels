@@ -8,6 +8,7 @@
         private $dbname;
 
         protected function connect(){
+
             $this->$url= parse_url(getenv("CLEARDB_DATABASE_URL"));
             $this->servername= $url["host"];
             $this->username= $url["user"];
